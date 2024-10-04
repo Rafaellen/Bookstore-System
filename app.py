@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, flash
 from models import create_table, add_book, get_book, update_price, get_book_by_id, remove_book, find_book, export_csv
 
 app = Flask(__name__)
-app.secret_key = 'framengo'
+app.secret_key = 'chave_secreta_qualquer'
 create_table()
 
 
