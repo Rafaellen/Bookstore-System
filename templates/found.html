@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Buscar Livros por Autor</h1>
+<form method="POST" action="{{ url_for('fd_book') }}">
+    <div class="form-group">
+        <label for="autor">Nome do Autor:</label>
+        <input type="text" class="form-control" id="autor" name="autor" placeholder="Digite o nome do autor">
+    </div>
+    <button type="submit" class="btn btn-primary">Buscar</button>
+</form>
+{% endblock %}
